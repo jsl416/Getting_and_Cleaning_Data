@@ -11,11 +11,11 @@ This readme file shows two parts
 The purpose of the "run_analysis.R" is to create a tidy set directed by the Course project guidelines.  
 (1) It downloads the Samsung Galaxy data into your working directory and merges the training and the test sets to create one data.  
 (2) Then it extracts the mean and standard deviation for each measurement with feature.txt.  
-(3) It uses descriptive activity names(w/ activity_labels.txt) to name the activities in the data set at the column number 562.  
+(3) It uses descriptive activity names(w/ activity_labels.txt) to name the activities in the data set at the column number 67.  
 (4) It appropriately labels the data set with descriptive variable names with feature.txt variables.  
-(5) Fianllay, it creates a second, independent tidy data set with the average of each variable for each activity and each subject.  
+(5) Fianllay, it creates a second, independent tidy data set with the average of each variable for each activity and each subject. In here, subjects who performed the experiments are added at the column number 68.  
   
-Since there are 30 subjects who took parts in the experiment and 6 activities, the total number of rows of the final dataset is 180, with column names from "feature.txt".  
+Since there are 30 subjects who took parts in the experiment and 6 activities, the total number of rows of the final dataset is 180, with appropriate column names.  
   
 The details of r syntax can be found in the r script as comments.  
   
