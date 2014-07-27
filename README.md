@@ -23,7 +23,7 @@ The details of r syntax can be found in the r script as comments.
   
 68 Variables(Except "Subject", "Acitivity_Name", all are AVERAGE values of that particular variables!)
   
-* The vairable with AVE_ prefix means values of that variable is the mean.  
+* The variable with 'AVE' prefix means a value of that variable is the mean of the values measured in a particular activity by a subject.  
 * The letter 't' in 'Ave_t' prefix means the values are time units.  
 * The letter 'f' in 'Ave_f' prefix means the values are frequency measures.  
 * '-X or -Y or -Z' are used to denote 3-axial signals in the X, Y and Z directions.  
