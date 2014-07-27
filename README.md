@@ -8,7 +8,7 @@ This readme file shows two parts
 2) the codebook for the final data set created.  
 
 # 1) About "run_analysis.R" script  
-This purpose of the "run_analysis.R" is to create a tidy set directed by the Course project guidelines.  
+The purpose of the "run_analysis.R" is to create a tidy set directed by the Course project guidelines.  
 (1) It downloads the Samsung Galaxy data into your working directory and merges the training and the test sets to create one data.  
 (2) Then it extracts the mean and standard deviation for each measurement with feature.txt.  
 (3) It uses descriptive activity names(w/ activity_labels.txt) to name the activities in the data set at the column number 562.  
@@ -19,12 +19,18 @@ Since there are 30 subjects who took parts in the experiment and 6 activities, t
   
 The details of r syntax can be found in the r script as comments.  
   
-# 2) Codebook for the Final Dataset
-
-To see how these values are measured, please refer to "features_info.txt" in 
+# 2) Codebook for the Final Dataset  
+  
+68 Variables(Except "Subject", "Acitivity_Name", all are AVERAGE values of that particular variables!)
+  
+* The vairable with AVE_ prefix means values of that variable is the mean.  
+* The letter 't' in 'Ave_t' prefix means the values are time units.  
+* The letter 'f' in 'Ave_f' prefix means the values are frequency measures.  
+* '-X or -Y or -Z' are used to denote 3-axial signals in the X, Y and Z directions.  
+* For more information how these values are measured, please refer to "features_info.txt" and "feature.txt" in 
 "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip" file.  
   
-68 Variables with 180 values(Except "Subject", "Acitivity_Name", all are AVERAGE values of that particular variables!)  
+  
 1. Subject : One who has performed the experiment  
 2. Activity_Name : What activity Subject has performed  
                   * LAYING  
