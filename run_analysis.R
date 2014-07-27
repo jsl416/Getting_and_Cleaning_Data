@@ -128,22 +128,29 @@ str(subject_test)
 subject_combined <- rbind(subject_train, subject_test)
 str(subject_combined)
 
-tidydata_2st <- cbind(tidydata_1st, subject_combined)
-str(tidydata_2st)
-colnames(tidydata_2st)[68] <- "Subject" # Name the subject column with "Subject"
+tidydata_2nd <- cbind(tidydata_1st, subject_combined)
+str(tidydata_2nd)
+colnames(tidydata_2nd)[68] <- "Subject" # Name the subject column with "Subject"
 
 ## To use arrange functions for ordering data..
 library(plyr)
-arranged_tidydata_2st <- arrange(tidydata_2st, Subject, Activity_Name)
+arranged_tidydata_2nd <- arrange(tidydata_2nd, Subject, Activity_Name)
 head(arranged_tidydata_2st)
 
 ## To reshape the data easily..
 library(reshape2)
-melted <- melt(arranged_tidydata_2st, id.vars=c("Subject","Activity_Name"))
+melted <- melt(arranged_tidydata_2nd, id.vars=c("Subject","Activity_Name"))
 final_dataset <- dcast(melted, Subject+Activity_Name~ variable, mean)
 str(final_dataset)
 head(final_dataset)
 
+## Change the column names to take account of the calculation of values' averages.
+check2 <- colnames(final_dataset)
+check2[3:68] <- paste("Ave_", check2[3:68], sep="")
+colnames(final_dataset) <- check2
+
 ## FINAL tidy data set!
 write.table(final_dataset, "final_dataset(byJS).txt", row.names=FALSE)
-# check2 <- read.table("final_dataset(byJS).txt", header=T)
+
+# Check final data
+check3 <- read.table("final_dataset(byJS).txt", header=T)
