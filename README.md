@@ -3,9 +3,9 @@ Getting_and_Cleaning_Data
 
 Readme Files for the Course project of "Getting and Cleaning Data"  
 
-This readme file shows two parts   
+This readme file shows two parts,   
 1) How the R script called "run_analysis.R" is working  
-2) the codebook for the final data set created.  
+2) The codebook for the final data set created.  
 
 # 1) About "run_analysis.R" script  
 The purpose of the "run_analysis.R" is to create a tidy set directed by the Course project guidelines.  
