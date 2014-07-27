@@ -11,8 +11,7 @@ This readme file shows two parts
 The purpose of the "run_analysis.R" is to create a tidy set directed by the Course project guidelines.  
 (1) It downloads the Samsung Galaxy data into your working directory and merges the training and the test sets to create one data.  
 (2) Then it extracts the mean and standard deviation for each measurement with feature.txt.  
-(3) It uses descriptive activity names(w/ activity_labels.txt) to name the activities in the data set at the column number 562.  
-(4) It appropriately labels the data set with descriptive variable names with feature.txt variables.  
+(3) It uses descriptive activity names(w/ activity_labels.txt) to name the activities in the data set at the column number 562.  (4) It appropriately labels the data set with descriptive variable names with feature.txt variables.  
 (5) Fianllay, it creates a second, independent tidy data set with the average of each variable for each activity and each subject.  
   
 Since there are 30 subjects who took parts in the experiment and 6 activities, the total number of rows of the final dataset is 180, with column names from "feature.txt".  
@@ -21,12 +20,12 @@ The details of r syntax can be found in the r script as comments.
   
 # 2) Codebook for the Final Dataset  
   
-68 Variables(Except "Subject", "Acitivity_Name", all are AVERAGE values of that particular variables!)
-  
+68 Variables(Except "Subject", "Acitivity_Name", all are AVERAGE values of that particular variables!)  
+   
 * The variable with 'AVE' prefix means a value of that variable is the mean of the values measured in a particular activity by a subject.  
 * The letter 't' in 'Ave_t' prefix means the values are time units.  
 * The letter 'f' in 'Ave_f' prefix means the values are frequency measures.  
-* '-X or -Y or -Z' are used to denote 3-axial signals in the X, Y and Z directions.  
+* '-X or -Y or -Z' are used to denote 3-axial signals in the X, Y and Z directions.    
 * For more information how these values are measured, please refer to "features_info.txt" and "feature.txt" in 
 "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip" file.  
   
